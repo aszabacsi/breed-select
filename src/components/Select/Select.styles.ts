@@ -9,7 +9,7 @@ const noOnFocusBorder = {
 
 // TODO convert pixels to rem
 const selectStyles: StylesConfig<IOption, false, GroupBase<IOption>> = {
-  container: (base, state) => ({
+  container: (base) => ({
     ...base,
     width: '535px',
   }),
