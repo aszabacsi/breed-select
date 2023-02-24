@@ -1,0 +1,13 @@
+// TODO global typography settings should be in separate file for a real project
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+$font-primary: 'Lato', sans-serif;
+$default-font-size: 20px; // TODO should be rem
+
+*,
+*::before,
+*::after {
+  font-family: $font-primary;
+  font-size: $default-font-size;
+  box-sizing: inherit;
+}

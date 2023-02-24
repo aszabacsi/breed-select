@@ -1,0 +1,39 @@
+$dot-size: 22.4px; // TODO convert to rem
+
+%ellipsis {
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.select-option {
+  display: flex;
+  align-items: center;
+  &::before {
+    content: '';
+    display: block;
+    background-color: var(--dot-color);
+    min-height: $dot-size;
+    min-width: $dot-size;
+    height: $dot-size;
+    width: $dot-size;
+    border-radius: 50%;
+    margin-right: 15px; // TODO convert to rem
+  }
+  &__label-container {
+    width: calc(90%); // TODO calculate scrollbar width properly
+  }
+  &__label {
+    font-weight: 400;
+    color: #201F1F; // TODO should be a variable in typography file
+    margin: 0;
+    @extend %ellipsis;
+  }
+  &__secondary-label {
+    display: block;
+    font-weight: 300;
+    color: #2E2D2D; // TODO should be a variable in typography file
+    margin: 0;
+    @extend %ellipsis;
+  }
+}
