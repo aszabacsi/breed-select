@@ -1,4 +1,4 @@
-# Aidn Component
+# Breed Selector example
 
 ## Prerequisites
 
